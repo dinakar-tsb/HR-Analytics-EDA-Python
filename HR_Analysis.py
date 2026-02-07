@@ -21,7 +21,7 @@ plt.show()
 
 # Salary distribution
 plt.figure()
-sns.histplot(df["Monthly_Salary"],kde=False)
+sns.histplot(df["Monthly_Salary"],kde=True)
 plt.title("Montly Salary Distribution")
 plt.show()
 
@@ -47,3 +47,4 @@ plt.show()
 
 dept_avg_salary = df.groupby("Department")["Monthly_Salary"].mean()
 print(dept_avg_salary)
+
