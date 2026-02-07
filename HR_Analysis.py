@@ -3,9 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv = pd.read_csv(
-    r"C:\Users\tsbdi\OneDrive\Documents\Data Analytics\HR_Project\HR_Database.csv"
-)
+df = pd.read_csv("HR_Database.csv")
 
 print(df.head())
 print(df.columns)
@@ -47,4 +45,5 @@ plt.show()
 
 dept_avg_salary = df.groupby("Department")["Monthly_Salary"].mean()
 print(dept_avg_salary)
+
 
